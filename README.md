@@ -1,5 +1,8 @@
 # webrtc-signal-http-publisher
 
+[![Build Status](https://travis-ci.org/bengreenier/webrtc-signal-http-publisher.svg?branch=master)](https://travis-ci.org/bengreenier/webrtc-signal-http-publisher)
+
+
 publish the status from webrtc-signal-http servers.
 
 ## Configuration
