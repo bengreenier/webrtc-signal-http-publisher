@@ -109,7 +109,8 @@ describe('webrtc-signal-http-publisher', () => {
       router.peerList._peers = {
         0: {
           name: 'renderingserver_test',
-          capacity: 12
+          capacity: 12,
+          ip: '127.0.0.1'
         },
         1: {
           name: 'renderingclient_test'
@@ -131,7 +132,8 @@ describe('webrtc-signal-http-publisher', () => {
           totalSlots: 12,
           servers: {
             0: {
-              slots: 12
+              slots: 12,
+              ip: '127.0.0.1'
             }
           }
         })

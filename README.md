@@ -24,14 +24,15 @@ or by hooking the `/sign_in` and `/sign_out` requests (if it's an old peerList).
     "totalSlots": number,
     "servers": {
         "<id>": {
-            "slots": number
+            "slots": number,
+            "ip": string
         },
         ...
     }
 }
 ```
 
-As documented [here](https://github.com/3DStreamingToolkit/cloud-deploy/issues/41).
+As documented [here](https://github.com/3DStreamingToolkit/cloud-deploy/issues/41). Please note, the `ip` value will only be present if express is able to [detect the ip](http://expressjs.com/en/4x/api.html#req.ip), and there is a current socket open to the signaling server.
 
 ## License
 
